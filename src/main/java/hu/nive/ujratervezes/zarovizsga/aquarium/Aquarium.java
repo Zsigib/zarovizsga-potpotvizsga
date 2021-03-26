@@ -8,10 +8,11 @@ public class Aquarium {
 
     private List<Fish> fishes = new ArrayList<>();
 
-    public Fish getStatus() {
-
-
-           }
+    public List<String> getStatus() {
+        List<String> status = new ArrayList<>();
+        status.add(String.valueOf(fishes));
+    return status;
+    }
 
     public void addFish(Fish fish) {
         fishes.add(fish);
@@ -22,6 +23,11 @@ public class Aquarium {
         fishes.forEach(Fish::feed);
     }
 
+
+
     public void removeFish(Fish fish) {
-        fishes.remove(fish);}
+        if (fish.getWeight() >= 11) {
+        fishes.remove(fish);
+    }
+    }
 }

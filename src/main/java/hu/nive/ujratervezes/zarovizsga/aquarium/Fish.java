@@ -15,8 +15,8 @@ public abstract class Fish {
     }
 
     public Fish status(String name) {
-        for (Fish fish : )
-    return }
+
+    return null;}
 
 
     public abstract void feed();
